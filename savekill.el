@@ -93,7 +93,7 @@
   (save-kill-internal))
 ;; (progn (ad-disable-advice 'kill-new 'after 'savekill) (ad-update 'kill-new))
 
-(add-hook 'after-init-hook (lambda () (load save-kill-file-name)))
+(add-hook 'after-init-hook (lambda () (load save-kill-file-name t)))
 (provide 'savekill)
 
 ;; How to save (DO NOT REMOVE!!)
