@@ -79,7 +79,9 @@
 (defvar save-kill-coding-system 'utf-8)
 
 (defun save-kill-internal ()
-  (let ((coding-system-for-write save-kill-coding-system))
+  (let ((coding-system-for-write save-kill-coding-system)
+        (print-length nil)
+        (print-level nil))
     (write-region
     (concat "(setq kill-ring '"
             (prin1-to-string (mapcar 'substring-no-properties kill-ring))
