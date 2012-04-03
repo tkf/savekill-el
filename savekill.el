@@ -74,7 +74,7 @@
 
 (defcustom save-kill-file-name "~/.emacs.d/kill-ring-saved.el"
   "*Saved `kill-ring' filename."
-  :type 'string  
+  :type 'string
   :group 'savekill)
 (defvar save-kill-coding-system 'utf-8)
 
